@@ -1,27 +1,57 @@
 package com.basic.intrinsiclock;
 
 public class ClassVsObjectLock {
-    public void m1() {
-        System.out.println("m1");
+    public String m1() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "m1";
     }
 
-    public static void m2() {
-        System.out.println("m2");
+    public static String m2() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "m2";
     }
 
-    public synchronized void m3() {
-        System.out.println("m3");
+    public synchronized String m3() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "m3";
     }
 
-    public synchronized void m4() {
-        System.out.println("m4");
+    public synchronized String m4() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "m4";
     }
 
-    public static synchronized void m5() {
-        System.out.println("m5");
+    public static synchronized String m5() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "m5";
     }
 
-    public static  synchronized void m6() {
-        System.out.println("m6");
+    public static  synchronized String m6() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "m6";
     }
 }
